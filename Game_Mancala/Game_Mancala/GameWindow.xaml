@@ -1,0 +1,42 @@
+﻿<Window x:Class="Game_Mancala.GameWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Game_Mancala"
+        mc:Ignorable="d"
+        Title="GameWindow" Height="612" Width="800">
+    <Grid x:Name="windowGameWindow" Height="612" VerticalAlignment="Top" Loaded="gameWindowOnLoad" Width="1000">
+        <Canvas x:Name="gameCanvas" Background="white" />
+        <Button x:Name="btnPlayer2_Pit7" Content="" HorizontalAlignment="Left" Height="60" Margin="133,64,0,0" VerticalAlignment="Top" Width="60" Click="btnPlayerClick"/>
+        <Button x:Name="btnPlayer2_Pit6" Content="" HorizontalAlignment="Left" Height="60" Margin="236,64,0,0" VerticalAlignment="Top" Width="60" Click="btnPlayerClick"/>
+        <Button x:Name="btnPlayer2_Pit5" Content="" HorizontalAlignment="Left" Height="60" Margin="329,64,0,0" VerticalAlignment="Top" Width="60" Click="btnPlayerClick"/>
+        <Button x:Name="btnPlayer2_Pit4" Content="" HorizontalAlignment="Left" Height="60" Margin="425,64,0,0" VerticalAlignment="Top" Width="60" Click="btnPlayerClick"/>
+        <Button x:Name="btnPlayer2_Pit3" Content="" HorizontalAlignment="Left" Height="60" Margin="526,64,0,0" VerticalAlignment="Top" Width="60" Click="btnPlayerClick"/>
+        <Button x:Name="btnPlayer2_Pit2" Content="" HorizontalAlignment="Left" Height="60" Margin="617,64,0,0" VerticalAlignment="Top" Width="60" Click="btnPlayerClick"/>
+        <Button x:Name="btnPlayer1_Pit0" Content="" HorizontalAlignment="Left" Height="60" Margin="133,278,0,0" VerticalAlignment="Top" Width="60" Click="btnPlayerClick"/>
+        <Button x:Name="btnPlayer1_Pit5" Content="" HorizontalAlignment="Left" Height="60" Margin="617,278,0,0" VerticalAlignment="Top" Width="60" Click="btnPlayerClick"/>
+        <Button x:Name="btnPlayer1_Pit1" Content="" HorizontalAlignment="Left" Height="60" Margin="236,278,0,0" VerticalAlignment="Top" Width="60" Click="btnPlayerClick"/>
+        <Button x:Name="btnPlayer1_Pit2" Content="" HorizontalAlignment="Left" Height="60" Margin="329,278,0,0" VerticalAlignment="Top" Width="60" Click="btnPlayerClick"/>
+        <Button x:Name="btnPlayer1_Pit3" Content="" HorizontalAlignment="Left" Height="60" Margin="425,278,0,0" VerticalAlignment="Top" Width="60" Click="btnPlayerClick"/>
+        <Button x:Name="btnPlayer1_Pit4" Content="" HorizontalAlignment="Left" Height="60" Margin="526,278,0,0" VerticalAlignment="Top" Width="60" Click="btnPlayerClick"/>
+        <Button x:Name="btnRestartGame" Content="Restart Game" HorizontalAlignment="Left" Height="60" Margin="95,513,0,0" VerticalAlignment="Top" Width="133" Click="btnRestartGame_Click"/>
+        <Button x:Name="btnExit" Content="Exit Game" HorizontalAlignment="Left" Height="61" Margin="582,513,0,0" VerticalAlignment="Top" Width="133" Click="btnExit_Click"/>
+        <Button x:Name="btnStore2" Content="" HorizontalAlignment="Left" Height="120" Margin="10,140,0,0" VerticalAlignment="Top" Width="60" Click="btnPlayerClick" IsEnabled="False"/>
+        <Button x:Name="btnStore1" Content="" HorizontalAlignment="Left" Height="120" Margin="676,140,0,0" VerticalAlignment="Top" Width="60" Click="btnPlayerClick" IsEnabled="False"/>
+        <Label x:Name="currentTurnHeadingLabel" Content="Current Turn:" HorizontalAlignment="Left" Height="42" Margin="329,382,0,0" VerticalAlignment="Top" Width="170" FontSize="18" HorizontalContentAlignment="Center"/>
+        <Label x:Name="playerLabel" Content="Player 1" HorizontalAlignment="Left" Height="42" Margin="329,416,0,0" VerticalAlignment="Top" Width="170" FontSize="18" HorizontalContentAlignment="Center"/>
+        <Label x:Name="eventLabel" Content="A capture was successful!" HorizontalAlignment="Left" Height="32" Margin="526,446,0,0" VerticalAlignment="Top" Width="220" FontSize="18" HorizontalContentAlignment="Center"/>
+        <Label x:Name="playerOneHeaderLabel" Content="Player 1 Score:" HorizontalAlignment="Left" Height="31" Margin="133,382,0,0" VerticalAlignment="Top" Width="131" HorizontalContentAlignment="Center" FontSize="18"/>
+        <Label x:Name="playerTwoHeaderLabel" Content="Player 2 Score:" HorizontalAlignment="Left" Height="31" Margin="546,382,0,0" VerticalAlignment="Top" Width="131" HorizontalContentAlignment="Center" FontSize="18"/>
+        <Label x:Name="playerOneScoreValueLabel" Content="0&#xD;&#xA;0" HorizontalAlignment="Left" Height="32" Margin="170,408,0,0" VerticalAlignment="Top" Width="58" HorizontalContentAlignment="Center" FontSize="18"/>
+        <Label x:Name="playerTwoScoreValueLabel" Content="0&#xA;0" HorizontalAlignment="Left" Height="32" Margin="582,408,0,0" VerticalAlignment="Top" Width="58" HorizontalContentAlignment="Center" FontSize="18"/>
+        <Button x:Name="btnPlayer1_Pit6" Content="" HorizontalAlignment="Left" Height="60" Margin="706,278,0,0" VerticalAlignment="Top" Width="60" Click="btnPlayerClick"/>
+        <Button x:Name="btnPlayer1_Pit7" Content="" HorizontalAlignment="Left" Height="60" Margin="792,278,0,0" VerticalAlignment="Top" Width="60" Click="btnPlayerClick"/>
+        <Button x:Name="btnPlayer2_Pit1" Content="" HorizontalAlignment="Left" Height="60" Margin="706,64,0,0" VerticalAlignment="Top" Width="60" Click="btnPlayerClick"/>
+        <Button x:Name="btnPlayer2_Pit0" Content="" HorizontalAlignment="Left" Height="60" Margin="792,64,0,0" VerticalAlignment="Top" Width="60" Click="btnPlayerClick"/>
+        <Label x:Name="cycloneLabel" Content="" HorizontalAlignment="Left" Height="36" Margin="79,452,0,0" VerticalAlignment="Top" Width="220" HorizontalContentAlignment="Center" FontSize="18" FontWeight="Medium"/>
+        <Button x:Name="btnGameRules" Content="Game Rules" HorizontalAlignment="Left" Height="60" Margin="348,514,0,0" VerticalAlignment="Top" Width="132" Click="btnGameRules_Click"/>
+
+    </Grid>
+</Window>

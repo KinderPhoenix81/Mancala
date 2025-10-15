@@ -1,0 +1,22 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2012/06/nuspec.xsd">
+  <metadata>
+    <id>Game_Mancala</id>
+    <version>1.0.0</version>
+    <authors>Game_Mancala</authors>
+    <description>Package Description</description>
+    <repository type="git" commit="520c72f08a620ffb4cbbbd11307491362f179da1" />
+    <dependencies>
+      <group targetFramework="net8.0-windows7.0" />
+    </dependencies>
+    <frameworkReferences>
+      <group targetFramework="net8.0-windows7.0">
+        <frameworkReference name="Microsoft.WindowsDesktop.App.WPF" />
+      </group>
+    </frameworkReferences>
+  </metadata>
+  <files>
+    <file src="C:\Users\_Mischief\OneDrive\NWTC\Csharp2\Game_Mancala\Game_Mancala\Game_Mancala\bin\Debug\net8.0-windows\Game_Mancala.runtimeconfig.json" target="lib\net8.0-windows7.0\Game_Mancala.runtimeconfig.json" />
+    <file src="C:\Users\_Mischief\OneDrive\NWTC\Csharp2\Game_Mancala\Game_Mancala\Game_Mancala\bin\Debug\net8.0-windows\Game_Mancala.dll" target="lib\net8.0-windows7.0\Game_Mancala.dll" />
+  </files>
+</package>

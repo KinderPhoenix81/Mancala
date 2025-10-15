@@ -1,0 +1,59 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\Alex\\Documents\\Final_Project\\Game_Mancala\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{39B2A728-977D-4082-A0A6-D1F60B8007D1}|Game_Mancala\\Game_Mancala.csproj|c:\\users\\alex\\documents\\final_project\\game_mancala\\game_mancala\\mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{39B2A728-977D-4082-A0A6-D1F60B8007D1}|Game_Mancala\\Game_Mancala.csproj|solutionrelative:game_mancala\\mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{39B2A728-977D-4082-A0A6-D1F60B8007D1}|Game_Mancala\\Game_Mancala.csproj|c:\\users\\alex\\documents\\final_project\\game_mancala\\game_mancala\\gamewindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{39B2A728-977D-4082-A0A6-D1F60B8007D1}|Game_Mancala\\Game_Mancala.csproj|solutionrelative:game_mancala\\gamewindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 432,
+          "SelectedChildIndex": 2,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:128:0:{75188d03-9892-4ae2-abf1-207126247ce5}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:129:0:{75188d03-9892-4ae2-abf1-207126247ce5}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "MainWindow.xaml",
+              "DocumentMoniker": "C:\\Users\\Alex\\Documents\\Final_Project\\Game_Mancala\\Game_Mancala\\MainWindow.xaml",
+              "RelativeDocumentMoniker": "Game_Mancala\\MainWindow.xaml",
+              "ToolTip": "C:\\Users\\Alex\\Documents\\Final_Project\\Game_Mancala\\Game_Mancala\\MainWindow.xaml",
+              "RelativeToolTip": "Game_Mancala\\MainWindow.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2024-12-20T19:35:46.457Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "GameWindow.xaml",
+              "DocumentMoniker": "C:\\Users\\Alex\\Documents\\Final_Project\\Game_Mancala\\Game_Mancala\\GameWindow.xaml",
+              "RelativeDocumentMoniker": "Game_Mancala\\GameWindow.xaml",
+              "ToolTip": "C:\\Users\\Alex\\Documents\\Final_Project\\Game_Mancala\\Game_Mancala\\GameWindow.xaml",
+              "RelativeToolTip": "Game_Mancala\\GameWindow.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2024-12-18T01:58:46.78Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

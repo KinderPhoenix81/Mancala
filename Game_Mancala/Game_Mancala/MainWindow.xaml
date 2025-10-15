@@ -1,0 +1,59 @@
+﻿<Window x:Class="Game_Mancala.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Game_Mancala"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid>
+        <Button x:Name="btnAbout" Content="About" HorizontalAlignment="Left" Height="40" Margin="341,365,0,0" VerticalAlignment="Top" Width="152" Click="btnAbout_Click"/>
+        <Button x:Name="btnClose" Content="Close" HorizontalAlignment="Left" Height="40" Margin="591,365,0,0" VerticalAlignment="Top" Width="151" Click="btnClose_Click"/>
+        <Label x:Name="lblMancalaTitle" Content="Mancala In C#" HorizontalAlignment="Left" Height="47" Margin="309,10,0,0" VerticalAlignment="Top" Width="210" FontSize="32"/>
+        <Button x:Name="btnNewGame" Content="New Game" HorizontalAlignment="Left" Height="40" Margin="74,365,0,0" VerticalAlignment="Top" Width="152" Click="btnNewGame_Click"/>
+        <ComboBox x:Name="cbPlayer1Type" HorizontalAlignment="Left" Margin="172,102,0,0" VerticalAlignment="Top" Width="146" Height="32" SelectionChanged="playerTypeChanged" VerticalContentAlignment="Center">
+            <ComboBoxItem Cursor="Arrow" Content="Human" IsSelected="True"/>
+            <ComboBoxItem Cursor="Arrow" Content="CPU"/>
+        </ComboBox>
+        <ComboBox x:Name="cbPlayer2Type" HorizontalAlignment="Left" VerticalAlignment="Top" Width="146" Height="32" Margin="172,160,0,0" Tag="2" StaysOpenOnEdit="True" SelectionChanged="playerTypeChanged" VerticalContentAlignment="Center">
+            <ComboBoxItem Cursor="Arrow" Content="Human" IsSelected="True"/>
+            <ComboBoxItem Cursor="Arrow" Content="CPU"/>
+        </ComboBox>
+        <ComboBox x:Name="cbPlayer1Difficulty" HorizontalAlignment="Left" Margin="589,102,0,0" VerticalAlignment="Top" Width="147" Height="32"  IsEnabled="False">
+            <ComboBoxItem Cursor="Arrow" Content="Easy"/>
+            <ComboBoxItem Cursor="Arrow" Content="Difficult"/>
+            <ComboBoxItem Content="Random"/>
+        </ComboBox>
+        <Label x:Name="lblPlayer1" Content="Player 1:" HorizontalAlignment="Left" Height="38" Margin="68,96,0,0" VerticalAlignment="Top" Width="104" FontSize="22"/>
+        <Label x:Name="lblPlayer2" Content="Player 2:" HorizontalAlignment="Left" Height="38" Margin="67,154,0,0" VerticalAlignment="Top" Width="105" FontSize="22"/>
+        <ComboBox x:Name="cbPlayer2Difficulty" HorizontalAlignment="Left" Margin="589,160,0,0" VerticalAlignment="Top" Width="146" Height="32"  IsEnabled="False">
+            <ComboBoxItem Cursor="Arrow" Content="Easy"/>
+            <ComboBoxItem Cursor="Arrow" Content="Difficult"/>
+            <ComboBoxItem Content="Random"/>
+        </ComboBox>
+        <Label x:Name="lblPlayerType" Content="Player Type" HorizontalAlignment="Left" Height="32" Margin="172,65,0,0" VerticalAlignment="Top" Width="146" FontSize="18" RenderTransformOrigin="-0.281,0.543"/>
+        <Label x:Name="lblCpuDifficulty" Content="CPU Difficulty" HorizontalAlignment="Left" Height="32" Margin="590,65,0,0" VerticalAlignment="Top" Width="146" FontSize="18"/>
+        <Label x:Name="lblPlayer1Name" Content="Player Name" HorizontalAlignment="Left" Height="32" Margin="341,65,0,0" VerticalAlignment="Top" Width="146" FontSize="18" RenderTransformOrigin="-0.281,0.543"/>
+        <TextBox x:Name="tbPlayer1Name" HorizontalAlignment="Left" Height="32" Margin="341,102,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="225" VerticalContentAlignment="Center"/>
+        <TextBox x:Name="tbPlayer2Name" HorizontalAlignment="Left" Height="32" Margin="341,160,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="225" VerticalContentAlignment="Center"/>
+        <ComboBox x:Name="cbPitCount" HorizontalAlignment="Left" VerticalAlignment="Top" Width="146" Height="32" Margin="341,204,0,0" Tag="2" StaysOpenOnEdit="True" SelectionChanged="playerTypeChanged" SelectedIndex="1" VerticalContentAlignment="Center">
+            <ComboBoxItem Cursor="Arrow" Content="4"/>
+            <ComboBoxItem Cursor="Arrow" Content="6"  IsSelected="True"/>
+            <ComboBoxItem Content="8"/>
+        </ComboBox>
+        <Label x:Name="lblPitCount" Content="Pit Count (per side):" HorizontalAlignment="Left" Height="38" Margin="68,204,0,0" VerticalAlignment="Top" Width="206" FontSize="22"/>
+        <ComboBox x:Name="cbStoneCount" HorizontalAlignment="Left" VerticalAlignment="Top" Width="146" Height="32" Margin="341,247,0,0" Tag="2" StaysOpenOnEdit="True" SelectionChanged="playerTypeChanged" SelectedIndex="2" VerticalContentAlignment="Center">
+            <ComboBoxItem Cursor="Arrow" Content="3"/>
+            <ComboBoxItem Content="4" IsSelected="True"/>
+            <ComboBoxItem Content="8"/>
+        </ComboBox>
+        <Label x:Name="lblStoneCount" Content="Stones Per Pit:" HorizontalAlignment="Left" Height="38" Margin="68,241,0,0" VerticalAlignment="Top" Width="206" FontSize="22"/>
+        <Label x:Name="lblCycloneMode" Content="Cyclone Mode:" HorizontalAlignment="Left" Height="38" Margin="68,279,0,0" VerticalAlignment="Top" Width="206" FontSize="22"/>
+        <Label x:Name="lblGoldenStone" Content="Golden Stone Mode:" HorizontalAlignment="Left" Height="38" Margin="68,322,0,0" VerticalAlignment="Top" Width="221" FontSize="22"/>
+        <RadioButton x:Name="radCycloneOn" Content="ON" HorizontalAlignment="Left" Height="20" Margin="341,288,0,0" VerticalAlignment="Top" Width="49" GroupName="cycloneMode"/>
+        <RadioButton x:Name="radCycloneOff" Content="OFF" HorizontalAlignment="Left" Height="19" Margin="438,289,0,0" VerticalAlignment="Top" Width="49" IsChecked="True" GroupName="cycloneMode"/>
+        <RadioButton x:Name="radGoldenOn" Content="ON" HorizontalAlignment="Left" Height="18" Margin="341,332,0,0" VerticalAlignment="Top" Width="49" GroupName="goldenMode"/>
+        <RadioButton x:Name="radGoldenOff" Content="OFF" HorizontalAlignment="Left" Height="20" Margin="438,331,0,0" VerticalAlignment="Top" Width="49" IsChecked="True" GroupName="goldenMode"/>
+
+    </Grid>
+</Window>
